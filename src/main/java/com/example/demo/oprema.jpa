@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" v="4.7" status="GENERATED" persistenceUnitName="DEFAULT_PU" sm="false" id="_15169499729661" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity abs="false" class="OpOprema" v="true" xre="false" m="false" rootElement="_15169499729661" id="_15169499729862">
+        <jpa:attributes>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="naziv" id="_15169499729904">
+                <jpa:column name="NAZIV" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="64"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.math.BigDecimal" v="true" name="vrNabavna" id="_15169499729905">
+                <jpa:column name="VR_NABAVNA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" precision="17" scale="2"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="dtVnosa" id="_15169499729906">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_VNOSA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="vnasalec" id="_15169499729917">
+                <jpa:column name="VNASALEC" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="30"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="tip" id="_15169499729918">
+                <jpa:column name="TIP" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="dtNabave" id="_15169499729919">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_NABAVE" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="oezr" id="_151694997299110">
+                <jpa:column name="OEZR" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="6"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.math.BigDecimal" v="true" name="vrZaAmor" id="_151694997299111">
+                <jpa:column name="VR_ZA_AMOR" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" precision="17" scale="2"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="dtIzlocitve" id="_151694997299112">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_IZLOCITVE" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="Short" v="true" name="status" id="_151694997299113">
+                <jpa:column name="STATUS" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="narocilo" id="_151694997299114">
+                <jpa:column name="NAROCILO" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="racun" id="_151694997299115">
+                <jpa:column name="RACUN" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="16"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="idPpDobavitelj" id="_151694997299116">
+                <jpa:column name="ID_PP_DOBAVITELJ" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="dobOznaka" id="_151694997299117">
+                <jpa:column name="DOB_OZNAKA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="30"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="serijskaStv" id="_151694997299118">
+                <jpa:column name="SERIJSKA_STV" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="30"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="tehPodatki" id="_151694997299119">
+                <jpa:column name="TEH_PODATKI" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="80"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="dtGarancijaDo" id="_151694997299120">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_GARANCIJA_DO" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="jeDel" id="_151694997299121">
+                <jpa:column name="JE_DEL" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="dnOs" id="_151694997299122">
+                <jpa:column name="DN_OS" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="1"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="lokacija" id="_151694997299123">
+                <jpa:column name="LOKACIJA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="dtZaAmor" id="_151694997299124">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_ZA_AMOR" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="amorSkupina" id="_151694997299125">
+                <jpa:column name="AMOR_SKUPINA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="skrbnik" id="_151694997299126">
+                <jpa:column name="SKRBNIK" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="120"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="sfDokumenta" id="_151694997299127">
+                <jpa:column name="SF_DOKUMENTA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.util.Date" v="true" name="dtDokumenta" id="_151694997299128">
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DT_DOKUMENTA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="computerName" id="_151694997299129">
+                <jpa:column name="COMPUTER_NAME" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="akcija" id="_151694997299130">
+                <jpa:column name="AKCIJA" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="zadolzen" id="_151694997299131">
+                <jpa:column name="ZADOLZEN" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="30"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="stanje" id="_151694997299132">
+                <jpa:column name="STANJE" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="1"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="java.math.BigDecimal" v="true" name="vrIzlocitve" id="_151694997299133">
+                <jpa:column name="VR_IZLOCITVE" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" precision="17" scale="2"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="strMes" id="_151694997299134">
+                <jpa:column name="STR_MES" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="strNos" id="_151694997299135">
+                <jpa:column name="STR_NOS" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="funGlej" id="_151694997299136">
+                <jpa:column name="FUN_GLEJ" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="30"/>
+            </jpa:basic>
+            <jpa:basic optional="true" attribute-type="String" v="true" name="funVnos" id="_151694997299137">
+                <jpa:column name="FUN_VNOS" unique="false" nullable="true" insertable="true" updatable="true" table="OP_OPREMA" length="30"/>
+            </jpa:basic>
+            <jpa:id attribute-type="String" v="true" name="invStv" id="_15169499729903">
+                <jpa:column name="INV_STV" unique="false" nullable="false" insertable="true" updatable="true" table="OP_OPREMA" length="10"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:table name="OP_OPREMA"/>
+    </jpa:entity>
+    <jpa:snp loc="BEFORE_PACKAGE" e="true">/**
+ * This file was generated by the Jeddict
+ */</jpa:snp>
+</jpa:entity-mappings>
