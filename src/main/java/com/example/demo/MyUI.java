@@ -36,6 +36,9 @@ public class MyUI extends UI implements ViewDisplay {
         navigationBar.addStyleName(ValoTheme.LAYOUT_COMPONENT_GROUP);
         navigationBar.addComponent(createNavigationButton("View Scoped View",
                 ViewScopedView.VIEW_NAME));
+        navigationBar.addComponent(createNavigationButton2("View Default View",
+                DefaultView.VIEW_NAME));
+        
         root.addComponent(navigationBar);
 
         springViewDisplay = new Panel();
@@ -52,6 +55,14 @@ public class MyUI extends UI implements ViewDisplay {
         // to an anonymous listener class
         button.addClickListener(event -> getUI().getNavigator().navigateTo(viewName));
         return button;
+    }
+    private Button createNavigationButton2(String caption, final String viewName) {
+        Button button2 = new Button(caption);
+        button2.addStyleName(ValoTheme.BUTTON_SMALL);
+        // If you didn't choose Java 8 when creating the project, convert this
+        // to an anonymous listener class
+        button2.addClickListener(event -> getUI().getNavigator().navigateTo(viewName));
+        return button2;
     }
 
     @Override
